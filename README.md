@@ -111,45 +111,45 @@
 ___
 
 
-># :memo: **Ενότητα 1**:<br>
-> ## Τεχνητή Νοημοσύνη
->  <div align="left">
->      <a href="https://www.youtube.com/watch?v=i0Ig3LdG-p4">
->         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=0dKkMS5-0jA">
->         <img src="https://img.youtube.com/vi/0dKkMS5-0jA/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=7a2aNF-dRo8">
->         <img src="https://img.youtube.com/vi/7a2aNF-dRo8/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=20VNny661UY">
->         <img src="https://img.youtube.com/vi/20VNny661UY/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=67ik8tnxqlE">
->         <img src="https://img.youtube.com/vi/67ik8tnxqlE/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=yUSj9VsM82U">
->         <img src="https://img.youtube.com/vi/yUSj9VsM82U/0.jpg" style="width:30%;">
->      </a>
->      <a href="https://www.youtube.com/watch?v=PVDguCvRwEs">
->         <img src="https://img.youtube.com/vi/PVDguCvRwEs/0.jpg" style="width:30%;">
->      </a>
->   
-> </div>
+# :memo: **Ενότητα 1**:<br>
+ ## Τεχνητή Νοημοσύνη
+  <div align="left">
+      <a href="https://www.youtube.com/watch?v=i0Ig3LdG-p4">
+         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=0dKkMS5-0jA">
+         <img src="https://img.youtube.com/vi/0dKkMS5-0jA/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=7a2aNF-dRo8">
+         <img src="https://img.youtube.com/vi/7a2aNF-dRo8/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=20VNny661UY">
+         <img src="https://img.youtube.com/vi/20VNny661UY/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=67ik8tnxqlE">
+         <img src="https://img.youtube.com/vi/67ik8tnxqlE/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=yUSj9VsM82U">
+         <img src="https://img.youtube.com/vi/yUSj9VsM82U/0.jpg" style="width:30%;">
+      </a>
+      <a href="https://www.youtube.com/watch?v=PVDguCvRwEs">
+         <img src="https://img.youtube.com/vi/PVDguCvRwEs/0.jpg" style="width:30%;">
+      </a>
+   
+ </div>
 
 ___
 
 
 
-># :memo: **Ενότητα 2**:<br>
-> ## Νευρωρικά Δίκτυα
->  <div align="left">
->      <a href="https://www.youtube.com/watch?v=x4mCfg14S28">
->         <img src="https://img.youtube.com/vi/x4mCfg14S28/0.jpg" style="width:30%;">
->      </a>
->   
-> </div>
+# :memo: **Ενότητα 2**:<br>
+ ## Νευρωρικά Δίκτυα
+  <div align="left">
+      <a href="https://www.youtube.com/watch?v=x4mCfg14S28">
+         <img src="https://img.youtube.com/vi/x4mCfg14S28/0.jpg" style="width:30%;">
+      </a>
+   
+ </div>
 
 
 <div>
