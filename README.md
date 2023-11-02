@@ -1,5 +1,5 @@
 
-<img src="https://github.com/talos-robotics/Forest-Guard/blob/main/forestguardimages/forestguardlogo.png" width="500" height="500">
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/pocketbreille.png" width="350" height="500">
 
 # The Pocket breille project
 
@@ -9,26 +9,27 @@
   
 ## <u>Το πρόβλημα</u>
 
-Κάθε χρόνο στην Ελληνική επικράτεια δίνεται σκληρή μάχη για την κατάσβεση των πυρκαγιών που καταστρέφουν μεγάλους πνεύμονες πρασίνου. Η οικολογική καταστροφή είναι τεράστια στην χλωρίδα, αλλά και στην πανίδα. Ζώα χάνουν τη ζωή τους, άνθρωποι χάνουν τη ζωή τους και την περιουσία τους που με τόσο κόπο δημιούργησαν. Οι πυρκαγιές αυτές μπορεί να δημιουργούνται είτε από τυχαία αίτια είτε από ανθρώπινο παράγοντα. Κακόβουλα ή από αμέλεια.
+Όλες οι αισθήσεις στη ζωή του κάθε ανθρώπου είναι πολύ σημαντικές. Μια από τις σημαντικότερες όμως, που η στέρησή της επηρεάζει πολύ σημαντικά τη ζωή του ατόμου είναι η όραση. Έχουμε φανταστεί άραγε τον εαυτό μας χωρίς αυτή; Έχουμε κλείσει έστω και για λίγο τα μάτια μας και να προσπαθήσουμε να κάνουμε ακόμα και το πιο απλό πράγμα της καθημερινότητας μας; Σίγουρα θα είναι πάρα πολύ δύσκολο ακόμα και να περπατήσουμε.
+Με αυτό το project θα προσπαθήσουμε να βοηθήσουμε τους ανθρώπους αυτούς στην καθημερινότητα τους.
+
 
 ## <u>Η λύση</u>
 
-Το project αναφέρεται στη δημιουργία ενός συστήματος που θα χρησιμοποιεί τεχνητή νοημοσύνη, έτσι ώστε να εντοπίζει τις απειλές αυτές εν τη γενέσει τους ή πριν αυτές εκδηλωθούν και να ειδοποιεί τις αρμόδιες υπηρεσίες.
-Πιο αναλυτικά, χρησιμοποιώντας ειδικούς μικροελεγκτες με ενσωματωμένες κάμερες όπως το esp32-CAM, το esp-ΕΥΕ, το Gravity HUSKYLENS, θα δημιουργήσουμε συστήματα ανίχνευσης αντικειμένων. 
+Το project αναφέρεται στη δημιουργία ενός φορητού, μικρού σε μέγεθος και εύχρηστου πληκτρολογίου για τη μέθοδο γραφής breille.  Το σύστημα θα ενσωματώνει λειτουργίες αναγνώρισης του κώδικα breille, αυτόματη μετατροπή του κώδικα σε γράμμα ή σύμβολο, αποστολή του κάθε γράμματος μέσω της θύρας usb σε αντίστοιχο λογισμικό στον υπολογιστή που είναι συνδεμένη η συσκευή. 
+Στη μεριά του υπολογιστή θα κατασκευάσουμε λογισμικό το οποίο θα λειτουργεί σαν απλός κειμενογράφος για ανθρώπους με προβλήματα όρασης. Θα ενσωματώσουμε τεχνολογία τεχνητής νοημοσύνης TTS (Text to speech) έτσι ώστε το άτομο να μπορεί να ακούει αυτά που γράφει και να διαχειρίζεται το περιβάλλον ακουστικά.
+Το σύστημα θα υποστηρίζεται από φορητό υπολογιστή παλάμης.
 
-Θα ασχοληθούμε με έννοιες όπως,
+Θα ασχοληθούμε με,
 
-- Machine learning
-- Νευρωνικά δίκτυα
-- Τη δημιουργία και την εκπαίδευση του δικού μας μοντέλου αντικειμένων αναγνώρισης
-- Την ενσωμάτωση του μοντέλου στους μικροελεγκτές.
+- Μικροελεγκτές Arduino
+- Γλώσσα προγραμματισμού C++
+- Γλώσσα προγραμματισμού Python
+- Κατασκευή GUI με τη χρήση Tkinter
+- Κατασκευή υπολογιστή παλάμης με τη χρήση raspberry pi για την ενσωμάτωση του λογισμικού
+- Χρήση τεχνολογίας TTS
+- Linux distributions σαν βασικό περιβάλλον εργασίας και δημιουργίας
+- 3d εκτυπώσεις για τη φιλοξενία του εξοπλισμού
 
-Επίσης το σύστημα θα χρησιμοποιεί ασύρματη υπηρεσία ειδοποίησης με τη χρήση WIFI έτσι ώστε να ενημερώνει όταν ανιχνεύσει μια απειλή. 
-Οι απειλές θα χωρίζονται σε 3 κατηγορίες. 
-
-- Ανθρώπινη παρουσία
-- Εστία φωτιάς
-- Παρουσία καπνού.
 
 </div>
 
@@ -92,14 +93,14 @@
 
 |Είδος|Ποσότητα|Τιμή Μονάδας|Σύνολο|Περιγραφή|
 |---|---|---|---|---|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/120/gravity-huskylens-an-easy-to-use-ai-machine-vision-sensor_grobo.jpg" style="width:30%;"></BR>Gravity HUSKYLENS - An Easy-to-use AI Machine Vision Sensor|2|68|136|https://grobotronics.com/gravity-huskylens-an-easy-to-use-ai-machine-vision-sensor.html?sl=en|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/113/mg996r-servo-1_grobo.jpg" style="width:30%;"></BR>Servo Standard 11kg.cm Metal Gears (Waveshare MG996R)|2|8.90|17.80|https://grobotronics.com/servo-standard-11kg.cm-metal-gears-waveshare-mg996r.html|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/121/mk6-4.5-112_grobo.jpg" style="width:30%;"></BR>Μπαταρία Μολύβδου 12V 5Ah|1|12.40|12.40|https://grobotronics.com/lead-acid-battery-12v-4.5ah.html|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/127/hr0064-1_grobo.jpg" style="width:30%;"></BR>Uno SMD Compatible - CH340|3|9.90|29.70|https://grobotronics.com/compatible-uno-smd-ch340.html|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/4/sp-10w-m_grobo.jpg" style="width:30%;"></BR>Φωτοβολταϊκή Κυψέλη 10W 33x29cm|1|19.90|19.90|https://grobotronics.com/fotoboltaiki-kypseli-10w-33x29cm.html|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/115/24v-12v-auto-solar-panel-battery-charge-controller-30a-20a-10a-pwm-lcd-display-solar-collector_grobo.jpg" style="width:30%;"></BR>Solar Battery Charger Regulator 10A - Dual USB|1|13.00|13.00|https://grobotronics.com/solar-battery-charger-regulator-10a-dual-usb.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/116/shop-google-4gb-images_1024x1024_grobo.jpg" style="width:30%;"></BR>Raspberry Pi 4 - Model B - 4GB|1|79.90|79.90|https://grobotronics.com/raspberry-pi-4-model-b-4gb.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/100/df3f83b0-040d-438e-b989-b8f4a0c5cb84_gd7c-al_grobo.jpg" style="width:30%;"></BR>Push Button Latching - 12.5mm Red|8|0.50|4.00|https://grobotronics.com/push-button-latching-12.5mm-red.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/125/arduino-proto-shield-rev3-uno-size-arduino-tsx00083-30396168798403_700x_grobo.jpg" style="width:30%;"></BR>Proto Shield Rev3 (Uno Size)|1|14.80|14.80|https://grobotronics.com/proto-shield-rev3-uno-size.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/127/hr0064-1_grobo.jpg" style="width:30%;"></BR>Uno SMD Compatible - CH340|1|9.90|9.90|https://grobotronics.com/compatible-uno-smd-ch340.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/103/4inch-hdmi-lcd-5_-_%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF_grobo.jpg" style="width:30%;"></BR>Pi Display 4" HDMI 800x480 IPS Resistive Touchscreen|1|44.90|44.90|https://grobotronics.com/pi-display-4-hdmi-800x480-ips-resistive-touchscreen.html|
+|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/126/primaselect-pla-chameleon-1-75mm-750-g-blue-green-ps-plac-175-0750-bg-26992_3_grobo.jpg" style="width:30%;"></BR>Νήμα PLA Chameleon 1.75mm PrimaSelect - Μπλε/Πράσινο 750g|1|34.90|34.90|https://grobotronics.com/primaselect-pla-chameleon-1.75mm-750g-spool-blue-green.html|
 ||||||
-|||Σύνολο|228.8||
+|||Σύνολο|188.4||
 |||||| 
 
   
