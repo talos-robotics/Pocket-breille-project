@@ -228,15 +228,15 @@ ___
 
 ___
 
-
+# Εγκατάσταση και παραμετροποίηση <br>
 
 # :memo: **Ενότητα** :three: :<br>
 
 ## Δημιουργία και ενεργοποίηση εικονικού περιβάλλοντος Python
   <div align="left">
     
-- python3 -m venv /home/manos/venv/myenv/
-- source /home/manos/venv/myenv/bin/activate
+- python3 -m venv ~/venv/myenv/
+- source ~/venv/myenv/bin/activate
   
  </div>
 
