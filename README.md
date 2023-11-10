@@ -149,11 +149,35 @@ ___
 
 
 # :memo: **Ενότητα 2**:<br>
- ## Νευρωρικά Δίκτυα
+
+## Δημιουργία και ενεργοποίηση εικονικού περιβάλλοντος Python
   <div align="left">
-      <a href="https://www.youtube.com/watch?v=x4mCfg14S28">
-         <img src="https://img.youtube.com/vi/x4mCfg14S28/0.jpg" style="width:30%;">
-      </a>
+    
+- python3 -m venv /home/manos/venv/myenv/
+- source /home/manos/venv/myenv/bin/activate
+  
+ </div>
+
+
+ ## Εγκατάσταση Βιβλιοθηκών Python
+  <div align="left">
+    
+- pip3 install python-vlc
+- pip3 install serial
+- pip3 install serial-tool
+- pip3 install playsound
+- pip3 install gtts
+   
+ </div>
+
+## Εγκατάσταση Thonny
+  <div align="left">
+
+https://github.com/thonny/thonny/releases/download/v4.1.3/thonny-4.1.3-x86_64.tar.gz
+
+cd ~/Λήψεις/thonny/
+./install
+Tools/options/interpreter
    
  </div>
 
