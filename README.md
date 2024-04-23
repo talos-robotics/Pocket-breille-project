@@ -232,6 +232,34 @@ ___
 
 # :memo: **Ενότητα** :three: :<br>
 
+## Εγκατάσταση λειτουργικού συστήματος στο Raspberry pi
+
+ <a href="https://www.youtube.com/watch?v=5DaYK3UKmDk">
+         <img src="https://img.youtube.com/vi/5DaYK3UKmDk/0.jpg" style="width:30%;">
+ </a>
+
+<br/><br/><br/>
+ <a href="https://el.linux-console.net/?p=12150#gsc.tab=0">
+     Εγκαταστήστε ένα λειτουργικό σύστημα στο Raspberry Pi σας
+ </a>
+ 
+
+## Παραμετροποίηση λειτουργικού στο Raspberry pi για τη λειτουργία της οθόνης waveshare
+
+ <a href="https://www.youtube.com/watch?v=0BsDy5CiRUU">
+         <img src="https://img.youtube.com/vi/0BsDy5CiRUU/0.jpg" style="width:30%;">
+ </a>
+
+<br/><br/><br/>
+<a href="https://www.waveshare.com/wiki/4inch_HDMI_LCD">
+     Αναλυτικές οδηγίες από την επίσημη σελίδα της εταιρίας
+ </a>
+
+<br/><br/><br/>
+<a href="https://github.com/waveshare/LCD-show">
+     Αποθετήριο των οδηγών χρήσης της εταιρίας
+ </a>
+
 ## Δημιουργία και ενεργοποίηση εικονικού περιβάλλοντος Python
   <div align="left">
     
