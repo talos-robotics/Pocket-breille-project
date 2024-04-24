@@ -243,8 +243,6 @@ ___
      Εγκαταστήστε ένα λειτουργικό σύστημα στο Raspberry Pi σας
  </a>
 
- <B> ΠΡΟΣΟΧΗ:</B>
- Για να κάνετε
  
 
 ## Παραμετροποίηση λειτουργικού στο Raspberry pi για τη λειτουργία της οθόνης waveshare
@@ -253,12 +251,12 @@ ___
          <img src="https://img.youtube.com/vi/0BsDy5CiRUU/0.jpg" style="width:30%;">
  </a>
 
-<br/><br/><br/>
+<br/><br/>
 <a href="https://www.waveshare.com/wiki/4inch_HDMI_LCD">
      Αναλυτικές οδηγίες από την επίσημη σελίδα της εταιρίας
  </a>
 
-<br/><br/><br/>
+<br/>
 <a href="https://github.com/waveshare/LCD-show">
      Αποθετήριο των οδηγών χρήσης της εταιρίας
  </a>
@@ -272,13 +270,21 @@ ___
     Λειτουργικό συστήματα με προεγκατεστημένη την οθόνη (Θα τα βρείτε στο τέλος της σελίδας)
  </a>
 
-## Δημιουργία και ενεργοποίηση εικονικού περιβάλλοντος Python
+
+## Εγκατάσταση Thonny
   <div align="left">
-    
-- python3 -m venv ~/venv/myenv/
-- source ~/venv/myenv/bin/activate
-  
+
+wget https://github.com/thonny/thonny/releases/tag/v4.1.4/thonny-4.1.4-x86-64.tar.gz
+sudo chmod +x thonny-4.1.4.bash
+
+cd ~/Λήψεις/thonny/
+./install
+Tools/options/interpreter
+   
  </div>
+
+
+<div>
 
 
  ## Εγκατάσταση Βιβλιοθηκών Python
@@ -292,19 +298,7 @@ ___
    
  </div>
 
-## Εγκατάσταση Thonny
-  <div align="left">
 
-https://github.com/thonny/thonny/releases/download/v4.1.3/thonny-4.1.3-x86_64.tar.gz
-
-cd ~/Λήψεις/thonny/
-./install
-Tools/options/interpreter
-   
- </div>
-
-
-<div>
 
 # $\fbox{Περιγραφή λειτουργίας συστήματος}$
   
