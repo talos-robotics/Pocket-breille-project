@@ -228,9 +228,24 @@ ___
 
 ___
 
+# Κατασκευή Πληκτρολογίου Braille <br>
+
+# :nut_and_bolt: **Ενότητα** :three: :wrench:<br>
+
+## Εκτύπωση κομματιών στομ 3d εκτυπωτή
+
+## Σχέδιο Σύνδεσης
+
+<img src="https://github.com/talos-robotics/Pocket-breille-project/images/keyboard.png" style="width:30%;">
+
+
+
+
+___
+
 # Εγκατάσταση και παραμετροποίηση <br>
 
-# :memo: **Ενότητα** :three: :<br>
+# :memo: **Ενότητα** :four: <br>
 
 ## Εγκατάσταση λειτουργικού συστήματος στο Raspberry pi
 
