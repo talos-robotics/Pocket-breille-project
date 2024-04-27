@@ -232,20 +232,22 @@ ___
 
 # :nut_and_bolt: **Ενότητα** :three: :wrench:<br>
 
-## Εκτύπωση κομματιών στομ 3d εκτυπωτή
+## Εκτύπωση κομματιών στον 3d εκτυπωτή
 
 ## Σχέδιο Σύνδεσης
 
-<img src="https://github.com/talos-robotics/Pocket-breille-project/tree/main/images/keyboard.png" style="width:50%;">
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/keyboard.png?raw=true" style="width:100%;">
 
 
 
 
 ___
 
-# Εγκατάσταση και παραμετροποίηση <br>
+# Εγκατάσταση και παραμετροποίηση  Raspberry pi<br>
 
 # :memo: **Ενότητα** :four: <br>
+
+## Εκτύπωση κομματιών στον 3d εκτυπωτή
 
 ## Εγκατάσταση λειτουργικού συστήματος στο Raspberry pi
 
@@ -284,9 +286,6 @@ ___
 <a href="http://www.lcdwiki.com/4inch_HDMI_Display-C#Download_Resources">
     Λειτουργικό συστήματα με προεγκατεστημένη την οθόνη (Θα τα βρείτε στο τέλος της σελίδας)
  </a>
-
-
-
 
 <div>
 
