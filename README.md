@@ -233,6 +233,19 @@ ___
 # :nut_and_bolt: **Ενότητα** :three: :wrench:<br>
 
 ## Εκτύπωση κομματιών στον 3d εκτυπωτή
+<a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/3dprints/Top.stl">
+         - Πάνω μέρος
+ </a>
+<br/>
+ 
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/3dprints/Bottom.stl">
+         - Κάτω μέρος
+ </a>
+
+ <br/>
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/3dprints/2xmiddle.stl">
+        - 2 x Μεσαίο κομμάτι
+ </a>
 
 ## Σχέδιο Σύνδεσης
 
