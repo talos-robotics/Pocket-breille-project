@@ -298,6 +298,10 @@ ___
 
 ## Εκτύπωση κομματιών στον 3d εκτυπωτή
 
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/3dprints/Stand.stl">
+         Raspberry pi stand
+ </a>
+
 ## Εγκατάσταση λειτουργικού συστήματος στο Raspberry pi
 
  <a href="https://www.youtube.com/watch?v=5DaYK3UKmDk">
