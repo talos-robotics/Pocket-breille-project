@@ -271,17 +271,6 @@ ___
  </a>
 
 
-## Εγκατάσταση Thonny
-  <div align="left">
-
-wget https://github.com/thonny/thonny/releases/tag/v4.1.4/thonny-4.1.4-x86-64.tar.gz
-sudo chmod +x thonny-4.1.4.bash
-
-cd ~/Λήψεις/thonny/
-./install
-Tools/options/interpreter
-   
- </div>
 
 
 <div>
@@ -289,12 +278,21 @@ Tools/options/interpreter
 
  ## Εγκατάσταση Βιβλιοθηκών Python
   <div align="left">
-    
-- pip3 install python-vlc
+
+Δημιουργούμε ένα νέο εικονικό περιβάλλον εργασίας Python
+- python3 -m venv pocketbraille
+
+Ενεργοποιούμε το περιβάλλον αυτό
+- cd pockerbraille
+- source bin/activate
+
+Κάνουμε εγκατάσταση τις βιβλιοθήκες με τη χρήση του εργαλείου pip3
+- pip3 install pillow
 - pip3 install serial
 - pip3 install serial-tool
-- pip3 install playsound
+- pip3 install pygame
 - pip3 install gtts
+- pip3 install thread
    
  </div>
 
