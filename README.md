@@ -255,14 +255,46 @@ ___
 ## Κώδικας για το Arduino
 
 ```C
+void setup() {
 
+  Serial.begin(9600); // 
+
+  pinMode(2,INPUT);
+  pinMode(3,INPUT);
+  pinMode(4,INPUT);
+  pinMode(5,INPUT);
+  pinMode(6,INPUT);
+  pinMode(7,INPUT);
+
+}
+
+void loop() {
+
+int sensorval2=digitalRead(2);
+int sensorval3=digitalRead(3);
+int sensorval4=digitalRead(4);
+int sensorval5=digitalRead(5);
+int sensorval6=digitalRead(6);
+int sensorval7=digitalRead(7);
+
+char buffer[6];
+sprintf(buffer, "%d%d%d%d%d%d", sensorval2, sensorval3, sensorval4, sensorval5, sensorval6, sensorval7) ;
+
+//String comp ="";
+
+if (String(buffer)!="000000"){
+  Serial.println(buffer);
+}
+
+delay(300);
+}
 
 ```
 ___
 
-# Εγκατάσταση και παραμετροποίηση  Raspberry pi<br>
+# Εγκατάσταση και παραμετροποίηση Raspberry pi<br>
 
-# :memo: **Ενότητα** :four: <br>
+# :bookmark_tabs: **Ενότητα** :four: <br>
 
 ## Εκτύπωση κομματιών στον 3d εκτυπωτή
 
@@ -337,6 +369,26 @@ ___
 
 ```
 
+# :memo: **Ενότητα** :five:  Φύλλα Εργασίας <br>
+
+<a href="">
+   Φύλλο εργασίας 1 <br>
+ </a>
+ <a href="">
+   Φύλλο εργασίας 2 <br>
+ </a>
+ <a href="">
+   Φύλλο εργασίας 3 <br>
+ </a>
+ <a href="">
+   Φύλλο εργασίας 4 <br>
+ </a>
+ <a href="">
+   Φύλλο εργασίας 5 <br>
+ </a>
+
+
+
 
 # $\fbox{Περιγραφή λειτουργίας συστήματος}$
   
@@ -383,7 +435,7 @@ ___
 
 <div>
 
-# $\fbox{Φωτογραφικό υλικό}$
+# :camera: Φωτογραφικό υλικό
 
 
 
@@ -400,7 +452,7 @@ ___
   
 
 
-### Εργαστήριο πληροφορικής - Βίντεο παρουσίαση
+# :movie_camera: Εργαστήριο πληροφορικής - Βίντεο παρουσίαση
   
 
 
