@@ -236,7 +236,7 @@ ___
 
 ## Σχέδιο Σύνδεσης
 
-<img src="https://github.com/talos-robotics/Pocket-breille-project/images/keyboard.png" style="width:30%;">
+<img src="https://github.com/talos-robotics/Pocket-breille-project/tree/main/images/keyboard.png" style="width:50%;">
 
 
 
