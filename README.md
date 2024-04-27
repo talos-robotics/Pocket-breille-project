@@ -252,8 +252,12 @@ ___
 <img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/keyboard.png?raw=true" style="width:100%;">
 
 
+## Κώδικας για το Arduino
+
+```C
 
 
+```
 ___
 
 # Εγκατάσταση και παραμετροποίηση  Raspberry pi<br>
@@ -306,6 +310,8 @@ ___
  ## Εγκατάσταση Βιβλιοθηκών Python
   <div align="left">
 
+Στο τερματικό του raspbian
+    
 Δημιουργούμε ένα νέο εικονικό περιβάλλον εργασίας Python
 - python3 -m venv pocketbraille
 
@@ -323,6 +329,13 @@ ___
    
  </div>
 
+
+ ## Κώδικας Python
+
+```Python
+
+
+```
 
 
 # $\fbox{Περιγραφή λειτουργίας συστήματος}$
