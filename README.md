@@ -257,8 +257,11 @@ ___
 ```C
 void setup() {
 
-  Serial.begin(9600); // 
-
+  //Στη συνάρτηση setup αρχικοποιούμε τη συριακή θύρα με ταχύτητα 9.600 kb το 
+  //δευτερολεπτο.
+  Serial.begin(9600);
+  
+  //Επίσης, αρχικοποιούμε τις ακίδες 2 3 4 5 6 και 7 έτσι ώστε να είναι ακίδες εισόδου. 
   pinMode(2,INPUT);
   pinMode(3,INPUT);
   pinMode(4,INPUT);
@@ -269,25 +272,37 @@ void setup() {
 }
 
 void loop() {
+  
+  //Στη συνάρτηση loop δημιουργούμε ισάριθμες μεταβλητές τύπου ακεραίου, όσες το πλήθος 
+  //των ακίδων και μέσα στην κάθε μεταβλητή τοποθετούμε την ψηφιακή ανάγνωση της 
+  //συγκεκριμένης ακίδας. Ουσιαστικά οι τιμές που θα περιέχουν μέσα θα είναι το 0 ή το 1. Αν 
+  //το κουμπί πατηθεί θα περιέχει την τιμή 1 όταν δεν είναι πατημένο την τιμή 0.
+  int sensorval2=digitalRead(2);
+  int sensorval3=digitalRead(3);
+  int sensorval4=digitalRead(4);
+  int sensorval5=digitalRead(5);
+  int sensorval6=digitalRead(6);
+  int sensorval7=digitalRead(7);
 
-int sensorval2=digitalRead(2);
-int sensorval3=digitalRead(3);
-int sensorval4=digitalRead(4);
-int sensorval5=digitalRead(5);
-int sensorval6=digitalRead(6);
-int sensorval7=digitalRead(7);
+  //Δημιουργούμε ένα πίνακα 6 θέσεων με όνομα buffer τύπου χαρακτήρων. Εκεί θα 
+  //αποθηκεύουμε όλες τις τιμές από όλα τα κουμπιά. 
+  char buffer[6];
+  //Με την εντολή sprintf δημιουργούμε μία ακολουθία από τις τιμές που περιέχουν οι 
+  //μεταβλητές των κουμπιών έτσι ώστε να φτιάξουμε ένα μοναδικό κωδικό με μηδέν και 1 για 
+  //το κάθε γράμμα ή σύμβολο ή αριθμό. Την ακολουθία που θα δημιουργήσει την τοποθετεί 
+  //μέσα στον πίνακα buffer που δημιουργήσαμε προηγουμένως.
+  sprintf(buffer, "%d%d%d%d%d%d", sensorval2, sensorval3, sensorval4, sensorval5, sensorval6, sensorval7) ;
 
-char buffer[6];
-sprintf(buffer, "%d%d%d%d%d%d", sensorval2, sensorval3, sensorval4, sensorval5, sensorval6, sensorval7) ;
+  //Αν η ακολουθία που περιέχεται μέσα στο buffer είναι όλα μηδενικά τότε σημαίνει ότι δεν έχει 
+  //πατηθεί κάποιο κουμπί οπότε δεν στέλνει τίποτα στη σειριακή θύρα.
+  if (String(buffer)!="000000"){
+    Serial.println(buffer);
+  }
 
-//String comp ="";
-
-if (String(buffer)!="000000"){
-  Serial.println(buffer);
+  //Δημιουργούμε μία παύση 300 ms.
+  delay(300);
 }
 
-delay(300);
-}
 
 ```
 ___
