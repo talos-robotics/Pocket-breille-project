@@ -384,6 +384,379 @@ ___
  ## Κώδικας Python
 
 ```Python
+#Εισαγωγή βιβλιοθηκών από την python 
+from tkinter import *
+from tkinter import ttk
+from tkinter import scrolledtext
+import serial
+import serial.tools.list_ports as ports
+import threading
+import gtts
+import pygame
+from PIL import Image, ImageTk
+
+#Δημιουργία μεταβλητής exitthread που παίρνει τιμές 0-1, έτσι ώστε όταν πατήσουμε το
+#κουμπί έξοδος να πάρει τιμή 1 και να μπορέσει να σταματήσει το νήμα που έχουμε
+#δημιουργήσει παρακάτω. 
+global exitthread
+
+#Αρχικοποίηση της μεταβλητής exit thread σε 0 
+exitthread=0
+
+#Αρχικοποίηση της μεθόδου mixer
+pygame.mixer.init()
+
+#Άνοιγμα σειριακής θύρας 
+try:
+    SerialPortObj = serial.Serial('/dev/ttyACM0')
+except:
+    pass
+
+#Συνάρτηση για την εκφώνηση του αρχείου read text.mp3 από τη βιβλιοθήκη pygame. Αυτή
+#εκτελείται όταν το ποντίκι περάσει πάνω από το κουμπί που γράφει διάβασε κείμενο. 
+def readbutshout(e):
+    pygame.mixer.music.load("readtext.mp3")
+    pygame.mixer.music.play()
+    
+#Συνάρτηση για την εκφώνηση του αρχείου exit.mp3 από τη βιβλιοθήκη pygame. Αυτή
+#εκτελείται όταν το ποντίκι περάσει πάνω από το κουμπί που γράφει έξοδος. 
+def readbutshout2(e):
+    pygame.mixer.music.load("exit.mp3")
+    pygame.mixer.music.play()
+    
+#Συνάρτηση για την εκφώνηση του αρχείου last line.mp3 από τη βιβλιοθήκη pygame. Αυτή
+#εκτελείται όταν το ποντίκι περάσει πάνω από το κουμπί που γράφει διάβασε τελευταία γραμμή.
+def readbutshout3(e):
+    pygame.mixer.music.load("lastline.mp3")
+    pygame.mixer.music.play()
+    
+#Συνάρτηση για την εκφώνηση του αρχείου save.mp3 από τη βιβλιοθήκη pygame. Αυτή
+#εκτελείται όταν το ποντίκι περάσει πάνω από το κουμπί που γράφει αποθήκευση κειμένου. 
+def readbutshout4(e):
+    pygame.mixer.music.load("save.mp3")
+    pygame.mixer.music.play()
+    
+ 
+#Συνάρτηση για την εκφώνηση του αρχείου open txt.mp3 από τη βιβλιοθήκη pygame. Αυτή
+#εκτελείται όταν το ποντίκι περάσετε πάνω από το κουμπί που γράφει άνοιγμα αρχείου.    
+def readbutshout5(e):
+    pygame.mixer.music.load("opentxt.mp3")
+    pygame.mixer.music.play()
+    
+
+#Συνάρτηση για την ανάγνωση της τελευταίας γραμμής.  
+def readlastlinetext():
+    #Δημιουργία του ηχητικού αποσπάσματος για τους 50 τελευταίους χαρακτήρες του scroll text
+    #με όνομα txt.
+    tts = gtts.gTTS(str(txt.get("end-50c" , "end")), lang="el")
+    #Αποθήκευση του ηχητικού στο δίσκο με όνομα grami.mp3.
+    tts.save("grami.mp3")
+    #Αναπαραγωγή ηχητικού στα ηχεία. 
+    pygame.mixer.music.load("grami.mp3")
+    pygame.mixer.music.play()
+
+#Συνάρτηση για την αποθήκευση του κειμένου που γράψαμε στο σκληρό δίσκο. 
+def savetext():
+    
+    try:
+        #Άνοιγμα αρχείου για εγγραφή με όνομα savedtxt.txt.
+        with open("savedtxt.txt", 'w') as file:
+            #Τοποθέτηση όλου του κειμένου από το scroll text στη μεταβλητή με όνομα text_content.
+            text_content = txt.get("1.0", "end-1c")
+            #Εγγραφή του περιεχομένου της μεταβλητής text_content στο αρχείο.
+            file.write(text_content)
+            
+    except:
+        #Αν υπάρξει σφάλμα εμφανίζει το μήνυμα error writing file. 
+        print("error writing file")
+
+#Συνάρτηση για το άνοιγμα του αποθηκευμένου αρχείου. 
+def opentext():
+    #Άνοιγμα αρχείου για ανάγνωση. 
+    f = open("savedtxt.txt", "r")
+    #Διάβασμα περιεχομένου του αρχείου και τοποθέτηση στη μεταβλητή opentxt.
+    opentxt = f.read()
+    #Τοποθέτηση του περιεχομένου της μεταβλητής opentxt στο scroll text.
+    txt.insert(INSERT,str(opentxt))
+
+#Συνάρτηση που εκτελείται όταν πατήσουμε το κουμπί έξοδος. 
+def onexit():
+    global exitthread
+    #Αν είναι η σειριακή θύρα είναι ανοιχτή τότε την κλείνει και κάνει τη μεταβλητή exitthread ίσο
+    #με 1 έτσι ώστε να σταματήσει να λειτουργεί το νήμα που έχουμε δημιουργήσει. 
+    try:
+        if SerialPortObj.is_open == True:
+            SerialPortObj.close()
+            exitthread=1
+    except:
+        pass
+    #Κλείνουμε την εφαρμογή. 
+    raise SystemExit
+    
+#Συνάρτηση για την ανάγνωση όλου του κειμένου.
+def readtext():
+    #Δημιουργία φωνητικού χρησιμοποιώντας το scrolltext από το χαρακτήρα 1 έως το τέλος. 
+    tts = gtts.gTTS(str(txt.get( 1.0, "end")), lang="el")
+    #Αποθήκευση φωνητικού που μόλις δημιουργήσαμε στο αρχείο text.mp3. 
+    tts.save("text.mp3")
+    #Αναπαραγωγή του ηχητικού που μόλις δημιουργήσαμε το αρχείο text.mp3
+    #χρησιμοποιώντας τη βιβλιοθήκη pygame. 
+    pygame.mixer.music.load("text.mp3")
+    pygame.mixer.music.play()
+
+#Συνάρτηση ανάγνωσης της σειριακής θήρας.
+#Ουσιαστικά αυτό είναι το νήμα το οποίο εκτελείται συνεχώς και ελέγχει αν έφτασαν
+#δεδομένα στη σειριακή θύρα και τα τοποθετεί μέσα σε μία μεταβλητή που ονομάζεται
+#receivedstring, μετά από κατάλληλη επεξεργασία όπου αφαιρεί τα κενά με τη συνάρτηση
+#rstrip και μετατρέπει το χαρακτήρα σε κωδικοποίηση utf 8. Το νήμα θα σταματήσει να
+#επαναλαμβάνετε όταν η μεταβλητή exit thread θα πάρει την τιμή 1. 
+def readport():
+    global exitthread
+    global receivedfive
+    
+    #Η συγκεκριμένη μεταβλητή ουσιαστικά λειτουργεί σαν διακόπτης όπου σε περίπτωση που
+    #γίνει αληθής τότε ελέγχει τους συνδυασμούς οι οποίοι έχουν γράμματα με τόνους ή
+    #σύμβολα.
+    receivedfive=False
+    
+    
+    #Σε αυτό το σημείο δημιουργούμε δύο διαφορετικούς δισδιάστατους πίνακες τον ένα τον
+    #ονομάζουμε combinations και τον άλλο τον ονομάζουμε tonoscombinations. Αυτοί πίνακες
+    #περιέχουν τους συνδυασμούς των πλήκτρων που πατατούνται με τα αντίστοιχα γράμματα η
+    #σύμβολα.
+    combinations=[["100000","α"],
+                  ["110000","β"],
+                  ["110110","γ"],
+                  ["100110","δ"],
+                  ["100010","ε"],
+                  ["101011","ζ"],
+                  ["001110","η"],
+                  ["100111","θ"],
+                  ["010100","ι"],
+                  ["101000","κ"],
+                  ["111000","λ"],
+                  ["101100","μ"],
+                  ["101110","ν"],
+                  ["101101","ξ"],
+                  ["101010","ο"],
+                  ["111100","π"],
+                  ["111010","ρ"],
+                  ["011100","σ"],
+                  ["011110","τ"],
+                  ["101111","υ"],
+                  ["110100","φ"],
+                  ["110010","χ"],
+                  ["111101","ψ"],
+                  ["010110","ω"],
+                  ["110001","αι"],
+                  ["100101","ει"],
+                  ["010101","οι"],
+                  ["110111","υι"],
+                  ["100001","αυ"],
+                  ["100011","ευ"],
+                  ["110011","ηυ"],
+                  ["101001","ου"],
+                  ["000001","-@-"],
+                  ["111111","<-"],
+                  ["011100","ς"],
+                  ["111101",""],
+                  ["101111",""],
+                  ["010011","."],
+                  ["010000",","],
+                  ["010001",";"],
+                  ["001000","'"]]
+    
+    
+    tonoscombinations=[["100000","ά"],
+                       ["100010","έ"],
+                       ["001110","ή"],
+                       ["010100","ί"],
+                       ["010100","ΐ"],
+                       ["101010","ό"],
+                       ["101111","ύ"],
+                       ["101111","ΰ"],
+                       ["010110","ώ"],
+                       ["010100","ϊ"],
+                       ["101111","ϋ"]]
+
+    
+    while exitthread!=1:
+        
+        
+        #Σε αυτό το σημείο οτιδήποτε λαμβάνει από τη σειριακή θύρα το τοποθετεί στη μεταβλητή
+        #receivedstring. Αν αυτό που έλαβε στη μεταβλητή receivedstring είναι διαφορετικό από την
+        #κωδικοποίηση 000010, δηλαδή να μην έχει πατηθεί το κουμπί 5 και η μεταβλητή
+        #receivedfive να είναι ίση με ψευδές τότε ελέγχει μέσα στον πίνακα combinations σε ποιο
+        #γράμμα αντιστοιχεί η συγκεκριμένη κωδικοποίηση. Όταν το εντοπίσει τότε προσθέτει το
+        #γράμμα αυτό μέσα στη μεταβλητή specialchar.
+       
+        try:
+            ReceivedString = SerialPortObj.readline().decode('utf-8').rstrip() 
+            
+            if ReceivedString!="000010" and receivedfive==False:
+                for x in combinations:
+                    if x[0] == ReceivedString:
+                        spesialchar=x[1]
+                        
+            #Άν η κωδικοποίηση που έλαβα από τη σειριακή θύρα είναι όλα μηδενικά και η μεταβλητή
+            #receivedfive είναι ίση με αληθές τότε σημαίνει ότι έχει πατηθεί το κουμπί 5. Τότε ψάχνει την
+            #κωδικοποίηση στον πίνακα tonoscombinations. Όταν το βρει τότε προσθέτει το αντίστοιχο
+            #γράμμα στη μεταβλητή specialchar.
+            if ReceivedString!="000000" and receivedfive==True:
+                for x in tonoscombinations:
+                    if x[0] == ReceivedString:
+                        spesialchar=x[1]
+                        receivedfive=False
+            
+            #Αν η μεταβλητή receivedstring είναι ίση με 5 δηλαδή 000010, τότε κάνει τη μεταβλητή
+            #receivedfive σε αληθές.
+            if ReceivedString=="000010":
+                receivedfive=True
+            
+            
+            #Αν λάβουμε τον ειδικό χαρακτήρα -@- σημαίνει ότι θα τοποθετήσουμε τον χαρακτήρα κενό,
+            #αφού τοποθετηθεί ο χαρακτήρας του κενού τότε σημαίνει ότι έχει ο χρήστης έχει
+            #ολοκληρώσει να γράφει μία λέξη. Αυτή τη λέξη θέλουμε εμείς να την εκφωνήσουμε. Θα
+            #πρέπει λοιπόν σε όλο το κείμενο που έχει γράψει να μπορέσουμε να βρούμε την τελευταία
+            #λέξη έτσι ώστε να δημιουργήσουμε την εκφώνησή της. Για να το κάνουμε αυτό
+            #δημιουργούμε μία λίστα με όνομα lis. Μέσα στη λίστα τοποθετούμε το κείμενο που έχει το
+            #scrolltext αφού το έχουμε σπάσει σε λέξεις χρησιμοποιώντας τη συνάρτηση split (). Με αυτό
+            #τον τρόπο αν πάρουμε το τελευταίο στοιχείο της λίστας τότε έχουμε την τελευταία λέξη που
+            #έγραψε ο χρήστης. Στη συνέχεια δημιουργούμε την εκφώνηση της λέξης και
+            #χρησιμοποιώντας το pygame την εκφωνούμε. 
+            if spesialchar=="-@-":
+                
+                kimeno=txt.get("1.0", "end")
+                lis = list(kimeno.split(" "))
+                length = len(lis)
+                print(lis[length-1])
+                
+                tts = gtts.gTTS(str(lis[length-1]), lang="el")
+                tts.save("lexi.mp3")
+                pygame.mixer.music.load("lexi.mp3")
+                pygame.mixer.music.play()
+                
+                                
+                txt.insert(INSERT," ")
+            
+            #Αν λάβουμε στη σειριακή θύρα των χαρακτήρα <- αυτό σημαίνει ότι ο χρήστης τέλη να
+            #σβήσει το τελευταίο γράμμα που έγραψε. Χρησιμοποιώντας λοιπόν την εντολή txt.delete
+            #διαγράφουμε του τελευταίου χαρακτήρα που γράφτηκε στο scroll text.
+            elif spesialchar=="<-":
+                txt.delete("end-2c","end")
+            #Για οποιαδήποτε άλλη περίπτωση ό,τι λάβει από την σειριακή θύρα το προσθέτει στο τέλος
+            #τους scroll text και στη συνέχεια δημιουργεί το φωνητικό αρχείο και το εκφωνεί μέσω της
+            #βιβλιοθήκης pygame.
+            else:
+                txt.insert(INSERT,str(spesialchar))
+                
+                try:
+                    tts = gtts.gTTS(spesialchar, lang="el")
+                    tts.save("letter.mp3")
+                    pygame.mixer.music.load("letter.mp3")
+                    pygame.mixer.music.play()
+                except:
+                    print("error in letter")
+                
+               
+                spesialchar=""
+               
+            
+        except:
+            print("error")
+           
+
+#Αν η σειριακή πόρτα είναι ανοιχτή τότε ξεκινάμε να εκτελούμε το νήμα. 
+try:
+    if SerialPortObj.is_open == True:
+        t = threading.Thread(target=readport).start()
+except:
+    pass
+
+#Σε αυτό το τμήμα κώδικα δημιουργούμε το γραφικό περιβάλλον χρήστη. 
+
+#Δημιουργούμε το παράθυρο 
+root = Tk()
+#Δίνουμε ένα τίτλο στο παράθυρο που θα φαίνεται στην κορυφή του.
+root.title("Pocket breille")
+#Ορίζουμε το μέγεθος το παραθύρου σε 800 x 480 pixels 
+root.geometry('800x480')
+#Τροποποιούμε την ιδιότητα του παραθύρου έτσι ώστε να φαίνεται πάντα, όταν ξεκινάει το
+#πρόγραμμα, σε πλήρη οθόνη.
+root.wm_attributes('-fullscreen','true')
+
+#Θα δημιουργήσουμε τρία frames το αριστερό το μεσαίο και το δεξιό τα οποία θα
+#φιλοξενήσουν τα κουμπιά και το scroll text. Τα frame τα χρησιμοποιούμε για να μπορέσουμε
+#να έχουμε μία σωστή διάταξη για τα αντικείμενά μας.
+
+#Κατασκευάζουμε το αριστερό frame με ύψος 480 pixels και μήκος 100 pixels βάζουμε το
+#background με χρώμα dodger blue 4. Του κάνουμε αριστερή στοίχιση.
+left_frame= Frame(root, height=480,width=100, bg= "dodgerblue4")
+left_frame.pack(side=LEFT)
+left_frame.pack_propagate(0)
+
+#Κατασκευάζουμε το μεσαίο frame με ύψος 480 pixels και πλάτος 570 pixels το background
+#το βάζουμε dodger blue 3. Οι στοίχιση και σε αυτό είναι αριστερή.
+middle_frame=Frame(root,height=480,width=570, bg= "dodgerblue3")
+middle_frame.pack(side=LEFT)
+middle_frame.pack_propagate(0)
+
+#Κατασκευάζουμε το δεξιό frame με ύψος 480 pixels και πλάτος 130 pixels το background το
+#βάζουμε dodger blue 4 και η στοίχιση του είναι δεξιά.
+right_frame=Frame(root,height=480,width=130, bg= "dodgerblue4")
+right_frame.pack(side=RIGHT)
+right_frame.pack_propagate(0)
+
+#Δημιουργούμε το κουμπί της εξόδου το τοποθετούμε στο δεξιό frame του ορίζουμε σαν
+#εντολή να εκτελέσει τη συνάρτηση onexit καθώς επίσης ορίζουμε πως όταν περάσει ο
+#δείκτης του ποντικιού πάνω από το κουμπί αυτό θα εκτελεί την συνάρτηση readbutshout2.
+#Το κουμπί του τοποθετούμε στο κάτω μέρος του frame για αυτό ορίζουμε και τη λέξη bottom #έχουμε ορίσει αγκιστρωση νοτιοανατολική. 
+closebut = ttk.Button(right_frame, text="Έξοδος",command=onexit)
+closebut.bind("<Enter>", readbutshout2)
+closebut.pack(side=BOTTOM,anchor=NE)
+
+#Δημιουργούμε το κουμπί που διαβάζει το κείμενο το τοποθετούμε στο αριστερό frame και
+#του ορίζουμε σαν εντολή να εκτελέσει τη συνάρτηση readtext. Το στοιχίζουμε στην κορυφή
+#του frame. 
+readbut = ttk.Button(left_frame, text="Διάβασε \n κείμενο", command=readtext)
+readbut.bind("<Enter>", readbutshout)
+readbut.pack(side=TOP)
+
+#Δημιουργούμε το κουμπί που που ανοίγει το αρχείο που έχουμε αποθηκεύσει την
+#προηγούμενη εργασία μας, το τοποθετούμε στο αριστερό frame, και το ορίζουμε σαν εντολή
+#να εκτελέσει τη συνάρτηση opentext. Το στοιχίζουμε στο κάτω μέρος του frame. 
+openbut = ttk.Button(left_frame, text="Άνοιγμα \n αρχείου", command=opentext)
+openbut.bind("<Enter>", readbutshout5)
+openbut.pack(side=BOTTOM)
+
+#Δημιουργούμε το κουμπί που διαβάζει την τελευταία γραμμή. Το τοποθετούμε στο δεξιό
+#πλαίσιο ευτυχισμένο στην κορυφή και ορίζουμε σαν εντολή να εκτελέσει τη συνάρτηση
+#readlastlinetext. 
+readlastlinebut = ttk.Button(right_frame, text="Διάβασε την \n τελευταία γραμμή", command=readlastlinetext)
+readlastlinebut.bind("<Enter>", readbutshout3)
+readlastlinebut.pack(side=TOP)
+
+#Δημιουργούμε το κουμπί αποθήκευσης του κειμένου ορίζοντας σαν εντολή εκτελέσει τις
+#συνάρτηση opentext. Το τοποθετούμε στο μεσαίο frame και το στοιχίζουμε στο κάτω μέρος
+#του.
+savebut = ttk.Button(middle_frame, text="Αποθήκευση κειμένου", command=savetext)
+savebut.bind("<Enter>", readbutshout4)
+savebut.pack(side=BOTTOM)
+
+#Δημιουργούμε το skrolled text το οποίο θα εμφανίζεται στο μεσαίο frame και θα έχει ύψος
+#999 χαρακτήρες.
+txt = scrolledtext.ScrolledText(middle_frame, height=999, font=("Arial 30"))
+txt.pack()
+
+#Δημιουργούμε μία εικόνα και την τοποθετούμε μέσα σε ένα label στο δεξιό frame.
+image = Image.open('images/pocketbreillelogo.png')
+image = ImageTk.PhotoImage(image)
+image_label = ttk.Label(right_frame, image=image)
+image_label.pack(side=RIGHT, padx=20)
+
+#Εκτελείται το loop γραφικού περιβάλλοντος της γλώσσας tkinter.
+root.mainloop()
+
 
 
 ```
