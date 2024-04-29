@@ -763,16 +763,16 @@ root.mainloop()
 
 # :memo: **Ενότητα** :five:  Φύλλα Εργασίας <br>
 
-<a href="">
+<a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/work%20sheet/%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82%201%20-%20Arduino.pdf">
    Φύλλο εργασίας 1 <br>
  </a>
- <a href="">
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/work%20sheet/%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82%202%20-%20Arduino.pdf">
    Φύλλο εργασίας 2 <br>
  </a>
- <a href="">
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/work%20sheet/%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82%203%20-%20Arduino.pdf">
    Φύλλο εργασίας 3 <br>
  </a>
- <a href="">
+ <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/work%20sheet/%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82%204%20-%20Python.pdf">
    Φύλλο εργασίας 4 <br>
  </a>
  <a href="">
