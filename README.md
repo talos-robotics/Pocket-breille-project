@@ -232,6 +232,12 @@ ___
 
 # :nut_and_bolt: **Ενότητα** :three: :wrench:<br>
 
+## Open educational resources project
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/OER-canvas_GREEK%20.png" style="width:100%;">
+
+## Περιγραφή λειτουργίας συστήματος
+
+
 ## Εκτύπωση κομματιών στον 3d εκτυπωτή
 <a href="https://github.com/talos-robotics/Pocket-breille-project/blob/main/3dprints/Top.stl">
          - Πάνω μέρος
@@ -251,6 +257,8 @@ ___
 
 <img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/keyboard.png?raw=true" style="width:100%;">
 
+
+## Διάγραμμα ροής
 
 ## Κώδικας για το Arduino
 
@@ -379,6 +387,10 @@ ___
 - pip3 install thread
    
  </div>
+
+
+## Διάγραμμα ροής
+
 
 
  ## Κώδικας Python
@@ -781,26 +793,11 @@ root.mainloop()
 
 
 
-
-# $\fbox{Περιγραφή λειτουργίας συστήματος}$
-  
-
-  
+ 
 </div>
 
 
-  
- <div>
 
-  
-
-### Διάγραμμα ροής
-  
-
-  
-  
-</div>
-  
   
   <div>
 
