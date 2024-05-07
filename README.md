@@ -260,6 +260,9 @@ ___
 
 ## Διάγραμμα ροής
 
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/arduinoflow.png" style="width:100%;">
+
+
 ## Κώδικας για το Arduino
 
 ```C
@@ -391,6 +394,7 @@ ___
 
 ## Διάγραμμα ροής
 
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/pythonflow.png" style="width:100%;">
 
 
  ## Κώδικας Python
