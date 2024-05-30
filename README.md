@@ -817,38 +817,51 @@ root.mainloop()
 
 # :camera: Φωτογραφικό υλικό
 
-### Εργαστήριο πληροφορικής - Κατασκευή πληκτρολογίου
+###  Προγραμματισμός - Κατασκευή πληκτρολογίου
 
 |||||
 |---|---|---|---|
-|<img src="/photos/plkat--0.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--1.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--2.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--3.jpg" alt="" style="width: 100%;"/>|
-|<img src="photos/plkat--4.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--5.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--6.jpg" alt="" style="width: 100%;"/>|<img src="photos/plkat--7.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/9.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/10.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/11.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/12.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/13.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/14.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/15.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/16.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/17.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/18.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/19.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/20.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/47.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/48.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/49.jpg" alt="" style="width: 100%;"/>|<img src="/images/taloslogo.png" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/8.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/9.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/10.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/11.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/12.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/13.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/14.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/15.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/16.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/17.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/18.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/54.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/19.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/53.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/55.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/56.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/57.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/58.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/59.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/60.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/constract/61.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/62.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/.jpg" alt="" style="width: 100%;"/>|<img src="photos/constract/.jpg" alt="" style="width: 100%;"/>|
 |||||  
 
-### Εργαστήριο πληροφορικής - Προγραμματισμός
+### Φεστιβάλ Ψηφιακής Δημιουργίας
 
 |||||
 |---|---|---|---|
-|<img src="/Photos/9.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/10.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/11.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/12.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/13.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/14.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/15.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/16.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/17.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/18.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/19.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/20.jpg" alt="" style="width: 100%;"/>|
-|<img src="/Photos/47.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/48.jpg" alt="" style="width: 100%;"/>|<img src="/Photos/49.jpg" alt="" style="width: 100%;"/>|<img src="/images/taloslogo.png" alt="" style="width: 100%;"/>|
+|<img src="photos/festival/20.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/22.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/24.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/25.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/festival/27.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/28.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/29.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/30.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/festival/31.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/32.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/33.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/34.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/festival/35.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/36.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/37.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/38.jpg" alt="" style="width: 100%;"/>|
+<img src="photos/festival/39.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/43.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/44.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/45.jpg" alt="" style="width: 100%;"/>|
+<img src="photos/festival/46.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/47.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/48.jpg" alt="" style="width: 100%;"/>|<img src="photos/festival/52.jpg" alt="" style="width: 100%;"/>|
 |||||    
  
 
-### Εργαστήριο πληροφορικής 
-  
+### Βιωματική Δράση
+
+|||||
+|---|---|---|---|
+|<img src="photos/viomatiko/71.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/72.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/73.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/74.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/75.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/76.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/77.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/78.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/79.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/80.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/82.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/85.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/86.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/87.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/88.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/89.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/90.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/91.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/92.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/93.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/94.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/95.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/96.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/97.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/98.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/99.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/100.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/101.jpg" alt="" style="width: 100%;"/>|
+|<img src="photos/viomatiko/102.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|
+|||||    
 
 
 ### Δοκιμές και παραμετροποίηση
   
 
 
-# :movie_camera: Εργαστήριο πληροφορικής - Βίντεο παρουσίαση
+# :movie_camera: Βίντεο παρουσίαση
   
 
 
