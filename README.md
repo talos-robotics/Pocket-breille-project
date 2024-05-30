@@ -813,7 +813,7 @@ root.mainloop()
 # :movie_camera: Βίντεο παρουσίαση
 
 <a href="https://www.youtube.com/watch?v=i0Ig3LdG-p4">
-         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:30%;">
+         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:60%;">
 </a>
  
 
