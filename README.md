@@ -805,12 +805,16 @@ root.mainloop()
   
   <div>
 
-# $\fbox{Τι να προσέξω - Αστοχίες και λάθη}$
+# :warning: Τι να προσέξω - Αστοχίες και λάθη
 
   
 </div>
   
+# :movie_camera: Βίντεο παρουσίαση
 
+<a href="https://www.youtube.com/watch?v=i0Ig3LdG-p4">
+         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:30%;">
+</a>
  
 
 <div>
@@ -856,15 +860,6 @@ root.mainloop()
 |<img src="photos/viomatiko/102.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|<img src="photos/viomatiko/.jpg" alt="" style="width: 100%;"/>|
 |||||    
 
-
-  
-
-
-# :movie_camera: Βίντεο παρουσίαση
-
-<a href="https://www.youtube.com/watch?v=i0Ig3LdG-p4">
-         <img src="https://img.youtube.com/vi/i0Ig3LdG-p4/0.jpg" style="width:30%;">
-</a>
 
 
 # :pray: ΕΥΧΑΡΙΣΤΙΕΣ
