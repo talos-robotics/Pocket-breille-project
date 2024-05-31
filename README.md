@@ -93,7 +93,7 @@
   
   
 ## Open Educational Resources
-  <img src="/images/oer.jpg" style="width:70%;">
+  <img src="images/OER-canvas_GREEK .png" style="width:70%;">
 
 # Υλικά ηλεκτρονικά
 
