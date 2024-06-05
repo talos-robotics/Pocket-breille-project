@@ -99,9 +99,7 @@
 Οι μαθητές θα πρέπει να:  
 - Δοκιμάσουν τον εξοπλισμό τους και να επιβεβαιώσουν τη σωστή λειτουργία του.  
   
-  
-## Open Educational Resources
-  <img src="images/OER-canvas_GREEK .png" style="width:70%;">
+
 
 # Υλικά ηλεκτρονικά
 
