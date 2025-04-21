@@ -4,8 +4,10 @@
 # The Pocket breille project
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Cc_by-nc_icon.svg/1920px-Cc_by-nc_icon.svg.png" alt="" width="150" height="50"/>
-<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/diakrisi24.png" alt="" width="1000" height="800"/>
+<img src="https://github.com/talos-robotics/Pocket-breille-project/blob/main/images/diakrisi24.png" alt="" width="800" height="600"/>
 
+# Δημοσίευση στον τύπο
+https://flashnews.gr/post/805889/diakrisi-1ou-dimotikou-scholeiou-mournion-kai-dimotikou-agrokipiou-se-panelladikou-diagonismou-ekpaideftikis-robotikis-tou-ellak/
 
 <div>
   
