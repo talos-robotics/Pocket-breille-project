@@ -114,7 +114,7 @@ https://flashnews.gr/post/805889/diakrisi-1ou-dimotikou-scholeiou-mournion-kai-d
 |<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/125/arduino-proto-shield-rev3-uno-size-arduino-tsx00083-30396168798403_700x_grobo.jpg" style="width:30%;"></BR>Proto Shield Rev3 (Uno Size)|1|14.80|14.80|https://grobotronics.com/proto-shield-rev3-uno-size.html|
 |<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/127/hr0064-1_grobo.jpg" style="width:30%;"></BR>Uno SMD Compatible - CH340|1|9.90|9.90|https://grobotronics.com/compatible-uno-smd-ch340.html|
 |<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/103/4inch-hdmi-lcd-5_-_%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF_grobo.jpg" style="width:30%;"></BR>Pi Display 4" HDMI 800x480 IPS Resistive Touchscreen|1|44.90|44.90|https://grobotronics.com/pi-display-4-hdmi-800x480-ips-resistive-touchscreen.html|
-|<img src="https://grobotronics.com/images/thumbnails/350/350/detailed/126/primaselect-pla-chameleon-1-75mm-750-g-blue-green-ps-plac-175-0750-bg-26992_3_grobo.jpg" style="width:30%;"></BR>Νήμα PLA Chameleon 1.75mm PrimaSelect - Μπλε/Πράσινο 750g|1|34.90|34.90|https://grobotronics.com/primaselect-pla-chameleon-1.75mm-750g-spool-blue-green.html|
+|<img src="https://grobotronics.com/images/detailed/134/pla_magic_silk_lagoon_300g_rosa3d_grobo.jpg" style="width:30%;"></BR>Νήμα PLA Chameleon 1.75mm PrimaSelect - Μπλε/Πράσινο 750g|1|34.90|34.90|https://grobotronics.com/primaselect-pla-chameleon-1.75mm-750g-spool-blue-green.html|
 ||||||
 |||Σύνολο|188.4||
 |||||| 
